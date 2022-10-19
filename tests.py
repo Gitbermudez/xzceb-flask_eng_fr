@@ -1,0 +1,2 @@
+frenchToEnglish(Bonjour)
+englishToFrench(Hello)
