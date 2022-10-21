@@ -11,8 +11,8 @@ class TestTransLator(unittest.TestCase):
     """
     def test_en_to_fr(self):
         self.assertEqual(en_to_fr("Hello"), "Bonjour")
-        self.assertEqual(en_to_fr("Goodbye"), "Au revoir")
-        self.assertNotEqual(en_to_fr("None"), ' ')
+        self.assertNotEqual(en_to_fr(0), 0)
+        self.assertNotEqual(en_to_fr("None"), '')
 
 class TestFrtoen(unittest.TestCase):
 #class test_fr_to_en(unittest.TestCase):
@@ -21,7 +21,7 @@ class TestFrtoen(unittest.TestCase):
     """
     def test_fr_to_en(self):
         self.assertEqual(fr_to_en("Bonjour"), "Hello")
-        self.assertEqual(fr_to_en("Au revoi"), "Goodbye")
+        self.assertNotEqual(fr_to_en(0), 0)
         self.assertNotEqual(fr_to_en("None"), '')
 
 if __name__=="__main__":
