@@ -1,27 +1,26 @@
 """ Test functions """
 import unittest
-from translator import e2f, f2e
+from translator import english_to_french, french_to_english
 
 #class TestFrtoen(unittest.TestCase):
-class TestEn2Frenc(unittest.TestCase):
+class TestEnglis2French(unittest.TestCase):
     """ English to French."""
-    def test1_e2f(self):
+    def test1(self):
         """ function."""
         #English to French."""
-        self.assertEqual(e2f("Hello"), "Bonjour") #E2F
-        self.assertNotEqual(e2f(0), 0)            #Null
-        self.assertNotEqual(e2f("None"), '')      #Null
+        self.assertEqual(english_to_french('Hello'), 'Bonjour') #E2F
+        self.assertNotEqual(english_to_french(0), 0)            #Null
+        self.assertNotEqual(english_to_french('None'), ' ')      #Null
 
 #class TestFrtoen(unittest.TestCase):
-class TestFrenc2En(unittest.TestCase):
+class TestFrench2English(unittest.TestCase):
     """ french to english """
-    def test2_f2e(self):
+    def test2(self):
         """ french to english """
         #french to english """
-        self.assertEqual(f2e("Bonjour"), "Hello") # F2E
-        self.assertNotEqual(f2e(0), 0)            #Null
-        self.assertNotEqual(f2e("None"), '')      #Null
-
+        self.assertEqual(french_to_english('Bonjour'), 'Hello') # F2E
+        self.assertNotEqual(french_to_english(0), 0)            #Null
+        self.assertNotEqual(french_to_english('None'), ' ')      #Null
 if __name__=="__main__":
     pass
 unittest.main()
