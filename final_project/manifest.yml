@@ -1,5 +1,5 @@
 ---
 applications:
- - name: ibmlearner_translation_app
+ - name: Douglas_Bermudez_English_to French_app
    random-random: true
    memory: 64M
